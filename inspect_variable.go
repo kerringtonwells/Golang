@@ -1,1 +1,1 @@
-fmt.Printf("%v", command)
+fmt.Printf("%v", variable)

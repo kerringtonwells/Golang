@@ -6,10 +6,8 @@
      "os/exec"
  )
  
- 
- 
- func main() {
+func main() {
   var replacer = strings.NewReplacer(" ", "\", \"")
   str := "ls -lhtr"
   str = replacer.Replace(str)
- }
+}

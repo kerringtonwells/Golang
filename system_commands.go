@@ -6,6 +6,7 @@ import (
 )
 
 func main() {
-        out, _ := exec.Command("sh", "-c", "date +\"%Y-%m-%d %H:%M:%S %Z\"").Output()
-        fmt.Printf("%s", out)
+        out, _ := exec.Command("sh", "-c", "ls -lhtra"").Output()
+        output := string(out)
+        fmt.Println(output)
 }
